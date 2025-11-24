@@ -1,5 +1,5 @@
 // app.js - versión robusta y dinámica
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://backend-u2-2025-production.up.railway.app/";
 const TOKEN_URL = BASE_URL + "/api/token/";
 
 let accessToken = null;
