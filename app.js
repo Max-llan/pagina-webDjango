@@ -1,4 +1,3 @@
-// app.js - versión robusta y dinámica
 const BASE_URL = "https://backend-u2-2025-production.up.railway.app";
 const TOKEN_URL = BASE_URL + "/api/token/";
 
@@ -11,7 +10,7 @@ function setStatus(msg, isErr = false) {
     console.log(msg);
 }
 
-// LOGIN PARA OBTENER TOKEN
+//LOGIN PARA OBTENER TOKEN
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
     e.preventDefault();
     setStatus("Conectando...");
@@ -56,7 +55,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     }
 });
 
-// UTIL - crea encabezados y tabla dinámicamente
+
 function buildTableFromArray(arr) {
     const table = document.getElementById("tablaVisitas");
     const tbody = document.getElementById("tbodyVisitas");
@@ -91,7 +90,7 @@ function buildTableFromArray(arr) {
     table.style.display = "table";
 }
 
-// LISTAR VISITAS EN TABLA
+
 document.getElementById("btnListar").addEventListener("click", async () => {
     if (!accessToken) accessToken = localStorage.getItem("access") || null;
 
