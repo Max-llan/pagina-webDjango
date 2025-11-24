@@ -1,5 +1,5 @@
 // app.js - versión robusta y dinámica
-const BASE_URL = "https://backend-u2-2025-production.up.railway.app"; // SIN slash final
+const BASE_URL = "https://backend-u2-2025-production.up.railway.app";
 const TOKEN_URL = BASE_URL + "/api/token/";
 
 let accessToken = null;
